@@ -1,0 +1,10 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: nacos-service-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.0.103:8848

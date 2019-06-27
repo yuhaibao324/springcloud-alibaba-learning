@@ -5,26 +5,21 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.dunzung.alibaba</groupId>
         <artifactId>springcloud-alibaba-learning</artifactId>
+        <groupId>com.dunzung.alibaba</groupId>
         <version>1.0.0</version>
     </parent>
 
-    <groupId>com.dunzung.alibaba.nacos.config</groupId>
-    <artifactId>nacos-config</artifactId>
+    <groupId>com.dunzung.alibaba.nacos.discovery</groupId>
+    <artifactId>nacos-discovery</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
     </dependencies>
-
 
 </project>

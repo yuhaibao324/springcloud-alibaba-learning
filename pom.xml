@@ -10,7 +10,10 @@
     <version>1.0.0</version>
 
     <modules>
-        <module>nacos-spring-cloud-config</module>
+        <module>nacos-config</module>
+        <module>nacos-discovery</module>
+        <module>nacos-service-provider</module>
+        <module>nacos-service-consumer</module>
     </modules>
 
     <dependencyManagement>
@@ -32,6 +35,11 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>${alibaba-nacos.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
                 <version>${alibaba-nacos.version}</version>
             </dependency>
         </dependencies>
@@ -124,6 +132,8 @@
         <spring.version>5.1.7.RELEASE</spring.version>
         <spring-boot.version>2.0.4.RELEASE</spring-boot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
 </project>
